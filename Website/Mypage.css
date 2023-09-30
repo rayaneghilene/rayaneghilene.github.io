@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    /*background-image: url('big-sur-4k-wp.jpg'); /* Replace 'your-background-image.jpg' with the actual image URL */
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 70px;
+}
+
+header {
+    background-color: #ff9710; /* Change the background color of the header to orange */
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between; /* Align items in header to the right */
+    align-items: center; /* Vertically center items in header */
+    position: fixed; /* Add fixed positioning */
+    top: 0; /* Position it at the top of the viewport */
+    width: 100%; /* Make it full width */
+    z-index: 100; /* Ensure it's above other elements */
+}
+header button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 80px; /* Add margin to the right to move the buttons to the right */
+}
+
+h1 {
+    color: #ffffff;
+    text-align: left;
+    font-size: 17px;
+    margin-left: 40px; /* Add margin to the left to move it off to the right */
+}
+
+h1 a {
+    color: white; /* Change the color of the link text to white */
+    text-decoration: none; /* Remove underline from the link */
+}
+
+.button-container {
+    display: flex;
+    gap: 10px; /* Adjust the gap between buttons */
+}
+
+p {
+    color: #333;
+    font-size: 18px;
+    text-align: left;
+}
+.split-container {
+    display: flex;
+    justify-content: center; /* Center both parts horizontally */
+    border: 0px solid #ddd; /* Add a border to separate the two parts */
+    padding: 0px;
+}
+.left-part,
+.right-part {
+
+    flex: 1; /* Each part takes an equal 50% of the container */
+    padding: 70px;
+    text-align: center;
+    overflow: hidden; /* Hide overflowing content (if any) */
+}
+
+.left-part {
+    background-color: #fff; /* Add a background color to the left part */
+    position: relative; /* Add relative positioning for positioning the orange rectangle */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px; /* Add top margin to match the right images */
+}
+
+.left-part h2 {
+    color: #ff6f61;
+}
+
+.left-part img {
+    display: block;
+    margin:  0; /* Adjust the margin between images */
+    max-width: 100%;
+    
+}
+
+
+.right-part img:first-child {
+    margin-top: 320px; /* Add top margin to the first image */
+}
+
+.right-part {
+    position: relative; /* Add relative positioning for positioning the orange rectangle */
+    background-color: black; /* Set the background of the right part to black */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-part img {
+    display: block; /* Ensure the image is a block element */
+    /*margin: 0 auto; /* Center the image horizontally */
+    margin: 0; 
+    max-width: 100%; /* Ensure images don't exceed their container's width */
+    margin-bottom: -200px;
+}
+
+
+
+/* Style for the image containers */
+.image-container {
+    position: relative;
+    display: inline-block;
+    margin: 30px; /* Adjust as needed */
+}
+
+/* Style for the image titles */
+.image-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* Remove background color property */
+    background-color: transparent; /* Set the background color to transparent */
+    color: white;
+    padding: 5px;
+    text-align: left;
+    font: size 135px;;
+    display: none; /* Hide initially */
+}
+
+/* Hover effect: darken the image and display the title */
+.image-container:hover img {
+    filter: brightness(50%); /* Darken the image */
+}
+
+.image-container:hover .image-title {
+    display: block; /* Display the title on hover */
+}
+.colored-word {
+    color: red; /* Set the desired color for the word */
+    /* You can also apply other styles as needed */
+}
