@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 70px;
+}
+
+header {
+    background-color: #ff9710;
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+header button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 80px;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: left;
+    font-size: 17px;
+    margin-left: 40px;
+}
+
+h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+p {
+    color: #333;
+    font-size: 18px;
+    text-align: left;
+}
+
+.split-container {
+    display: flex;
+    justify-content: right; /* Center both parts horizontally */
+    border: 0px solid #ddd; /* Add a border to separate the two parts */
+    padding: 0px;
+}
+
+.left-part,
+.right-part {
+    flex: 1;
+    padding: 70px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.left-part {
+    background-color: #fff;
+    position: relative;
+    /* Remove display and align-items properties */
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.left-part p {
+    text-align: left; /* Align the text to the left */
+    font-size: 170%;
+    margin-left: 30px; /* Reset margin to align text with image */
+}
+
+.left-part img {
+    display: block;
+    margin: 0; /* Reset margin to align text with image */
+    max-width: 100%;
+}
+
+.right-part img:first-child {
+    margin-top: 250px;
+}
+
+.right-part {
+    position: relative;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-part img {
+    display: block;
+    margin: 0;
+    max-width: 100%;
+    margin-bottom: -200px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    margin: 30px;
+}
+
+/* Style for the image titles */
+.image-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    padding: 5px;
+    text-align: left;
+    font-size: 135px; /* Corrected font size property */
+    display: none;
+}
+
+/* Hover effect: darken the image and display the title */
+.image-container:hover img {
+    filter: brightness(50%);
+}
+
+.image-container:hover .image-title {
+    display: block;
+}
+
+.colored-word {
+    color: red;
+    /* You can also apply other styles as needed */
+}
